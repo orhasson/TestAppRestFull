@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:gravity="fill_horizontal" >
+
+    <EditText
+        android:id="@+id/ChildremAcchildNameFieldID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/editText1"
+        android:textSize="14sp"
+        android:layout_alignLeft="@+id/chldrenAcAddChildBtnID"
+        android:layout_alignStart="@+id/chldrenAcAddChildBtnID"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignRight="@+id/ChildrenAcDeleteChildBtnID"
+        android:layout_alignEnd="@+id/ChildrenAcDeleteChildBtnID" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@drawable/btn_dropdown"
+        android:popupBackground="@drawable/bluegradient"
+        android:textAllCaps="false"
+        android:focusable="false"
+        android:paddingLeft="8dp"
+        android:paddingTop="3dp"
+        android:textSize="14sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/ChildrenAcDeleteChildBtnID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Button2"
+        android:textAllCaps="false"
+        android:singleLine="false"
+        android:layout_below="@+id/ChildremAcchildNameFieldID"
+        android:layout_alignRight="@+id/ChildrenAcEnterSelectionBtnID"
+        android:layout_alignEnd="@+id/ChildrenAcEnterSelectionBtnID" />
+
+    <Button android:id="@+id/ChildrenAcEnterSelectionBtnID"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Child On The Map"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="80dp"
+        android:onClick="enterSelection" />
+    <TextView android:id="@+id/myTextView"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <Button
+        android:id="@+id/chldrenAcAddChildBtnID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Button1"
+        android:textAllCaps="false"
+        android:singleLine="false"
+        android:layout_below="@+id/ChildremAcchildNameFieldID"
+        android:layout_toLeftOf="@+id/ChildrenAcDeleteChildBtnID"
+        android:layout_toStartOf="@+id/ChildrenAcDeleteChildBtnID"
+        android:layout_marginRight="60dp"
+        android:layout_marginEnd="64dp"
+        android:onClick="addNewChildUser" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/school" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Schedule"
+        android:id="@+id/setScheduleID"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/ChildrenAcEnterSelectionBtnID"
+        android:layout_alignStart="@+id/ChildrenAcEnterSelectionBtnID"
+        android:layout_alignRight="@+id/ChildrenAcEnterSelectionBtnID"
+        android:layout_alignEnd="@+id/ChildrenAcEnterSelectionBtnID" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Child IP"
+        android:id="@+id/showChildIPID"
+        android:layout_below="@+id/spinner1"
+        android:layout_alignLeft="@+id/ChildrenAcEnterSelectionBtnID"
+        android:layout_alignStart="@+id/ChildrenAcEnterSelectionBtnID"
+        android:layout_alignRight="@+id/ChildrenAcEnterSelectionBtnID"
+        android:layout_alignEnd="@+id/ChildrenAcEnterSelectionBtnID"
+        android:onClick="showChildIP" />
+
+</RelativeLayout>

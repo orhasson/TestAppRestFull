@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Parent"
+        android:ems="10"
+        android:id="@+id/loginUserNameID"
+        android:layout_weight="0.05"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/loginPasswordID"
+        android:text="123"
+        android:layout_weight="0.05"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/loginUserNameID"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RememberMe"
+        android:id="@+id/loginRememberMeID"
+        android:checked="true"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/loginPasswordID"
+        android:layout_alignLeft="@+id/loginPasswordID"
+        android:layout_alignStart="@+id/loginPasswordID" />
+
+    <Button
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/loginLoginBtnID"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onLoginButtonClick"
+        android:layout_below="@+id/loginRememberMeID"
+        android:layout_alignLeft="@+id/loginRememberMeID"
+        android:layout_alignStart="@+id/loginRememberMeID" />
+
+    <Button
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:id="@+id/loginSignUpID"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onSignUpButtonClick"
+        android:layout_below="@+id/loginLoginBtnID"
+        android:layout_alignLeft="@+id/loginLoginBtnID"
+        android:layout_alignStart="@+id/loginLoginBtnID"
+        android:layout_alignRight="@+id/loginLoginBtnID"
+        android:layout_alignEnd="@+id/loginLoginBtnID" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/user_manage"
+        android:layout_below="@+id/loginSignUpID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/serverIPFieldID"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView" />
+
+</RelativeLayout>

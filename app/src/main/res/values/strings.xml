@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FindMyChild</string>
+    <string name="sendLocButton">send location</string>
+    <string name="Add">Add</string>
+    <string name="ChildTextView">\@</string>
+    <string name="Child_Selector_image">ChildSelectorImage</string>
+    <string name="testtest">TEST1</string>
+    <string name="RegID">Register</string>
+    <string name="EmailViewID">E-Mail:</string>
+    <string name="PassViewOnlyID">Password:</string>
+    <string name="fNameOnlyViewID">Full Name:</string>
+    <string name="MainTitleID">Title</string>
+    <string name="AddBtn">Add</string>
+    <string name="editText1">Enter Your Child</string>
+    <string name="Button1">Add</string>
+    <string name="Button2">Delete</string>
+    <string name="action_settings">action_settings</string>
+    <string name="title_activity_child_on_the_map">Map</string>
+    <string name="stop_recording">Stop Recording</string>
+    <string name="start_recording">Start Recording</string>
+    <string name="title_Show_Path_On_Map">Map</string>
+</resources>
